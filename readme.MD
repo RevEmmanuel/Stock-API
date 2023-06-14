@@ -1,6 +1,13 @@
 # Stock API
 This ia a Java Spring boot server application to handle basic services for Stock Entities.
 
+### Features
+* `Retrieve a list of stocks`
+* `Retrieve a single stock by ID`
+* `Update the current price and name of a stock`
+* `Delete a stock by ID`
+* `Create a new stock`
+
 ### Technologies used:
 * `Java`
 * `Springboot`
