@@ -29,7 +29,7 @@ git clone https://github.com/RevEmmanuel/Stock-API.git
 ```
 
 ### Configure the database
-Create a PostgreSQL database and update the database configuration in the `application-{profile}.properties` file
+Create a PostgreSQL database and update the database configuration in the `application-{profile}.properties` file. The default active profile is "dev"
 ```properties
 db.host=
 db.name=
