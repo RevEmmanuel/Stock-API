@@ -29,11 +29,12 @@ git clone https://github.com/RevEmmanuel/Stock-API.git
 ```
 
 ### Configure the database
-Create a PostgreSQL database and update the database configuration in the `application.properties` file
-```
-spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+Create a PostgreSQL database and update the database configuration in the `application-{profile}.properties` file
+```properties
+db.host=
+db.name=
+db.username=
+db.password=
 ```
 
 ### Build and Run the Application
