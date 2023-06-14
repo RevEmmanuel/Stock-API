@@ -16,4 +16,5 @@ public interface StockService {
 
     StockDTO createStock(CreateUpdateStockRequest createUpdateStockRequest);
 
+    void deleteAll();
 }

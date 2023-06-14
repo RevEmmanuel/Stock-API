@@ -28,6 +28,7 @@ public class StockServiceImpl implements StockService{
     public StockDTO findStockById(Long stockId) {
         Stock foundStock = stockRepository.findById(stockId).orElseThrow(() -> new StockNotFoundException("Stock with id " + stockId + " not found!"));
         return mapStockToDto(foundStock);
+
     }
 
     @Override
@@ -57,6 +58,11 @@ public class StockServiceImpl implements StockService{
                 .build();
         Stock savedStock = stockRepository.save(createdStock);
         return mapStockToDto(savedStock);
+    }
+
+    @Override
+    public void deleteAll() {
+        stockRepository.deleteAll();
     }
 
     private static StockDTO mapStockToDto(Stock stock) {
